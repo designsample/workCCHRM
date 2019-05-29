@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="img/ic_fav.png"/>
+    <link rel="bookmark" href="img/ic_fav.png"/>  -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>彰化基督教醫院Reseach Matrix</title>
+    <meta name="keywords" content="彰基,彰基RM,彰基學術成果平台,彰化基督教醫院,Reseach Matrix" />
+    <meta name="description" content="彰化基督教醫院的學術成果平台——我們的研究成果與最新消息" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <!--js順序有差要注意-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/miller_code.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">	
+                    <span class="sr-only">選單切換</span>	
+                    <span class="icon-bar"></span>	
+                    <span class="icon-bar"></span>	
+                    <span class="icon-bar"></span>	
+                </button>
+                <a class="navbar-brand" href="index.html"><img alt="彰基logo" src="img/logo.png"></a>
+            </div>
+
+            <!-- 手機隱藏選單區 -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <!-- 左選單 -->
+                <ul class="nav navbar-nav main-menu pull-right">
+                    <li class="active"><a href="#"><span class="glyphicon glyphicon-home">&ensp;</span>首頁</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-bullhorn">&ensp;</span>最新消息</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-star">&ensp;</span>研究焦點</a></li>
+                    
+                    <li class="dropdown">	
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-eye-open">&ensp;</span>瀏覽 
+                            <b class="caret"></b></a>	
+                        <ul class="dropdown-menu">
+                            <li><a href="department.html">部級單位</a></li>
+                            <li><a href="division.html">科級單位</a></li>
+                            <li><a href="researcher.html">研究人員</a></li>
+                            <li><a href="article.html">學術著作</a></li>
+                            <li><a href="project.html">研究計畫</a></li>
+                        </ul>
+                    </li>
+                    
+                    
+                    <li><a href="#"><span class="glyphicon glyphicon-link">&ensp;</span>相關連結</a></li>
+                </ul>
+
+
+
+                <!-- 右選單 -->
+                <ul class="nav navbar-nav navbar-right sub-menu">
+                    <li><a href="#">登入</a></li>
+                    <li><a href="#">操作手冊</a></li>
+                    <li><a href="#">常見問題</a></li>
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">聯絡我們</a></li>
+                    <li><a href="#">彰基圖書館</a></li>
+                </ul>
+                
+            </div>
+            <!-- 手機隱藏選單區結束 -->
+        </div>
+    </nav>
+    <!--nav結束-->
+
+    <div class="container container-breadcrumb">
+        <ol class="breadcrumb">
+            <li><a href="index.html">首頁</a></li>
+            <li class="active">學術著作</li>
+        </ol>
+    </div>
+
+
+
+    <div class="container container-main">
+        <div class="row">
+            <div class="col-md-3 leftside-menu">
+                <ul class="ul_listnone">
+                    <h4>著作標題</h4>
+                </ul>
+                <ul class="ul_listnone">
+                    <li>
+                        <div class="search">
+                            <div class="input-group">
+                                <input type="text" class="search-bar form-control" placeholder="Search" />
+                                <span class="input-group-btn">
+                                   <button class="btn btn-search" type="button">    
+                                       <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                                </span>
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li>
+                        <div class="TestClass">
+                            <button class="btn btn-none dropdown-toggle rightcolumndropdown-insidetab" type="button" id="Test09" onclick="openCitymotherChild('classGroup', 'unfolded_9', 'span09')">
+                                <span id="span09" class="unfoldedb"></span>
+                                    進階搜尋
+                                </button>
+                            <ul class="classGroup" role="menu" id="unfolded_9">
+                                <li class="padding-default" role="資料類型">
+                                    資料類型
+
+                                    <select class="container-full" name="資料類型">
+                                                <option value="1">資料類型一</option>
+                                                <option value="2">資料類型二</option>
+                                                <option value="3">資料類型三</option>
+                                                <option value="4">資料類型四</option>
+                                            </select>
+
+                                </li>
+
+                                <li class="padding-default" role="出版年">
+                                    出版年
+
+                                    <div class="">
+
+                                        <input type="text" class="search-bar form-control width-forty" placeholder="西元年" />
+                                        <div class="width-twenty center">到</div>
+
+                                        <input type="text" class="search-bar form-control width-forty pull-right" placeholder="西元年" />
+                                    </div>
+
+
+
+
+
+
+                                </li>
+                                <li class="padding-default" role="科別">
+                                    科別
+                                    <select class="container-full" name="科別">
+                                        <option value="1">科別一</option>
+                                        <option value="2">科別二</option>
+                                        <option value="3">科別三</option>
+                                        <option value="4">科別四</option>
+                                    </select>
+
+                                </li>
+
+                                <li class="padding-default" role="研究人員姓名">
+                                    研究人員姓名
+                                    <input type="text" class="search-bar form-control" placeholder="研究人員姓名" />
+                                </li>
+
+
+                                <li class="padding-default" role="說明">
+                                    <button class="container-full btn btn-search" type="button"><span class="glyphicon glyphicon-search">&ensp;搜尋</span>
+                                        </button>
+                                </li>
+                            </ul>
+                        </div>
+
+
+
+
+                    </li>
+                    <hr>
+
+                    <li>
+                        <div class="TestClass">
+
+                            <button class="btn btn-none dropdown-toggle rightcolumndropdown-insidetab" type="button" id="Test01" onclick="openCitymotherChild('classGroup', 'unfolded_1', 'span01')">
+                                    <span id="span01" class="unfoldedb"></span>
+                                    依題名瀏覽
+                            </button>
+                            <ul class="classGroup searchby" role="menu" id="unfolded_1">
+
+                                <a target="_parent" href=""><span>A</span></a>
+                                <a target="_parent" href=""><span>B</span></a>
+                                <a target="_parent" href=""><span>C</span></a>
+                                <a target="_parent" href=""><span>D</span></a>
+                                <a target="_parent" href=""><span>E</span></a>
+                                <a target="_parent" href=""><span>F</span></a>
+                                <a target="_parent" href=""><span>G</span></a>
+                                <a target="_parent" href=""><span>H</span></a>
+                                <a target="_parent" href=""><span>I</span></a>
+                                <a target="_parent" href=""><span>J</span></a>
+                                <a target="_parent" href=""><span>K</span></a>
+                                <a target="_parent" href=""><span>L</span></a>
+                                <a target="_parent" href=""><span>M</span></a>
+                                <a target="_parent" href=""><span>N</span></a>
+                                <a target="_parent" href=""><span>O</span></a>
+                                <a target="_parent" href=""><span>P</span></a>
+                                <a target="_parent" href=""><span>Q</span></a>
+                                <a target="_parent" href=""><span>R</span></a>
+                                <a target="_parent" href=""><span>S</span></a>
+                                <a target="_parent" href=""><span>T</span></a>
+                                <a target="_parent" href=""><span>U</span></a>
+                                <a target="_parent" href=""><span>V</span></a>
+                                <a target="_parent" href=""><span>W</span></a>
+                                <a target="_parent" href=""><span>X</span></a>
+                                <a target="_parent" href=""><span>Y</span></a>
+                                <a target="_parent" href=""><span>Z</span></a>
+                                <button class="container-full btn btn-search" type="button"><span class="glyphicon glyphicon-menu-right">&ensp;檢視全部列表</span>
+                                </button>
+                            </ul>
+                        </div>
+                    </li>
+                    <hr>
+                </ul>
+                
+                
+                <ul class="ul_listnone">
+                    <h4>最高點閱前十名</h4>
+                </ul>
+                <ul class="ul_listnone">
+                            <li class="numbers-small">
+                                <div><a href="">六朝藝術理論中之審美觀硏究六朝藝術理論中之審美觀硏究</a></div><div>2221234</div>
+                                <!--不要把這兩個div分段，會造成排版跑掉-->
+                            </li>
+                            <li class="numbers-small">
+                                <div><a href="">六朝情境美學綜論</a></div><div>1234434</div>
+                            </li>
+                            <li class="numbers-small">
+                                <div><a href="">Search for supersymmetry with</a></div><div>1267734</div>
+                            </li>
+                            <li class="numbers-small">
+                                <div><a href="">徐志摩</a></div><div>127734</div>
+                            </li>
+                            <li class="numbers-small">
+                                <div><a href="">六朝藝術理論中之審美觀硏究</a></div><div>12734</div>
+                            </li>
+                            <li class="numbers-small">
+                                <div><a href="">種花種，種種種，種種種來種種紅</a></div><div>12634</div>
+                            </li>
+                            <li class="numbers-small">
+                                <div><a href="">六朝藝術理論中之審美觀硏究</a></div><div>1234</div>
+                            </li>
+                            <li class="numbers-small">
+                                <div><a href="">六朝藝術理論中之審美觀硏究</a></div><div>1234</div>
+                            </li>
+                            <li class="numbers-small">
+                                <div><a href="">六朝藝術理論中之審美觀硏究</a></div><div>1234</div>
+                            </li>
+                            <li class="numbers-small">
+                                <div><a href="">六朝藝術理論中之審美觀硏究</a></div><div>1234</div>
+                            </li>
+                        
+                </ul>
+                
+                
+
+            </div>
+            <!--左邊欄結束-->
+
+            <div class="col-md-9 rightside-menu">
+               
+                <div class="col-md-12 title-rightside">
+                    <h4><span class="glyphicon glyphicon-book">&ensp;</span>學術著作</h4>
+                </div>
+                
+                <div class="col-md-12 content-rightside research-list">
+                    <table class="protfolio-table-top" border="1" width="100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p class="color-gray">1-5之於123</p>
+                                </td>
+                                <td align="right">
+                                    排序：<select name="sortValue" id="sorts" style="display: inline;" required="true">
+													<option value="-1">請選擇</option>
+													<option value="01">資料類型</option>
+													<option value="02">年代</option>
+													<option value="03">題名</option>
+											</select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--排序-->
+
+                    <ol class="academicworks">
+                        <!--第一項-->
+                        <li class="pub-item">
+                            <ul>
+                                <!-- 標題 -->
+                                <li>
+                                    <span class="pub-title">Antibodies against Venom of the Snake Deinagkistrodon acutus</span>
+                                </li>
+
+
+                                <!-- 刊名 + 出版年 + 卷期 -->
+                                <li>
+                                    <span><span class="pub-title2">Article</span>
+                                    <span class="color-gray">APPLIED AND ENVIRONMENTAL MICROBIOLOGY , vol. 82, no. 1, page 71-80, 2016</span>
+                                    </span>
+                                </li>
+
+
+                                <!-- 已轉入 Academic Hub 作者 -->
+                                <li>
+                                    <span class="pub-author">
+                                                <span class="color-gray"><span class="glyphicon glyphicon-user pub-title3">&ensp;作者：</span>Leu,&nbsp;Sy-Jye;&nbsp;&nbsp;Lin,&nbsp;Liang-Tzung;&nbsp;&nbsp;<a href="./Teacher!one.action?tid=472" class="tip">Chiang,&nbsp;Jen-Ron<i class="glyphicon glyphicon-asterisk"></i><div class="pubauthor">江正榮(Jen-Ron Chiang)</div></a>;&nbsp;&nbsp;Yang,&nbsp;Yi-Yuan</span>
+                                    </span>
+                                </li>
+
+
+                                <!-- DOI -->
+                                <li>
+                                    <span class="color-gray"><span class="glyphicon glyphicon-info-sign pub-title3" aria-hidden="true">&ensp;DOI：</span><a class="color-default" href="" target="_blank">10.1128/AEM.02608-15</a></span>
+                                </li>
+                            </ul>
+                            <hr>
+                        </li>
+
+                        <!--第二項-->
+                        <li class="pub-item">
+                            <ul>
+                                <!-- 標題 -->
+                                <li>
+                                    <span class="pub-title">A dynamic model for the outbreaks of hand, foot, and mouth disease in Taiwan</span>
+                                </li>
+
+
+                                <!-- 刊名 + 出版年 + 卷期 -->
+                                <li>
+                                    <span><span class="pub-title2">Article</span>
+                                    <span class="color-gray">EPIDEMIOLOGY AND INFECTION & 123 , vol. 144 , no. 7 , page 1500-1511 , 2016</span>
+                                    </span>
+                                </li>
+
+
+                                <!-- 已轉入 Academic Hub 作者 -->
+                                <li>
+                                    <span class="pub-author">
+                                        <span class="color-gray"><span class="glyphicon glyphicon-user pub-title3">&ensp;作者：</span>Lai, C. -C. ;   Jiang, D. -S. ;   Wu, H. -M. ;</span>
+                                    </span>
+                                </li>
+
+
+                                <!-- DOI -->
+                                <li>
+                                    <span class="color-gray"><span class="glyphicon glyphicon-info-sign pub-title3" aria-hidden="true">&ensp;DOI：</span><a class="color-default" href="" target="_blank">10.1017/S0950268815002630</a></span>
+                                </li>
+                            </ul>
+                            <hr>
+                        </li>
+                        
+                        <!--第三項-->
+                        <li class="pub-item">
+                            <ul>
+                                <!-- 標題 -->
+                                <li>
+                                    <span class="pub-title">A dynamic model for the outbreaks of hand, foot, and mouth disease in Taiwan</span>
+                                </li>
+
+
+                                <!-- 刊名 + 出版年 + 卷期 -->
+                                <li>
+                                    <span><span class="pub-title2">Article</span>
+                                    <span class="color-gray">EPIDEMIOLOGY AND INFECTION & 123 , vol. 144 , no. 7 , page 1500-1511 , 2016</span>
+                                    </span>
+                                </li>
+
+
+                                <!-- 已轉入 Academic Hub 作者 -->
+                                <li>
+                                    <span class="pub-author">
+                                        <span class="color-gray"><span class="glyphicon glyphicon-user pub-title3">&ensp;作者：</span>Lai, C. -C. ;   Jiang, D. -S. ;   Wu, H. -M. ;</span>
+                                    </span>
+                                </li>
+
+
+                                <!-- DOI -->
+                                <li>
+                                    <span class="color-gray"><span class="glyphicon glyphicon-info-sign pub-title3" aria-hidden="true">&ensp;DOI：</span><a class="color-default" href="" target="_blank">10.1017/S0950268815002630</a></span>
+                                </li>
+                            </ul>
+                            <hr>
+                        </li>
+                        
+                        <!--第四項-->
+                        <li class="pub-item">
+                            <ul>
+                                <!-- 標題 -->
+                                <li>
+                                    <span class="pub-title">A dynamic model for the outbreaks of hand, foot, and mouth disease in Taiwan</span>
+                                </li>
+
+
+                                <!-- 刊名 + 出版年 + 卷期 -->
+                                <li>
+                                    <span><span class="pub-title2">Article</span>
+                                    <span class="color-gray">EPIDEMIOLOGY AND INFECTION & 123 , vol. 144 , no. 7 , page 1500-1511 , 2016</span>
+                                    </span>
+                                </li>
+
+
+                                <!-- 已轉入 Academic Hub 作者 -->
+                                <li>
+                                    <span class="pub-author">
+                                        <span class="color-gray"><span class="glyphicon glyphicon-user pub-title3">&ensp;作者：</span>Lai, C. -C. ;   Jiang, D. -S. ;   Wu, H. -M. ;</span>
+                                    </span>
+                                </li>
+
+
+                                <!-- DOI -->
+                                <li>
+                                    <span class="color-gray"><span class="glyphicon glyphicon-info-sign pub-title3" aria-hidden="true">&ensp;DOI：</span><a class="color-default" href="" target="_blank">10.1017/S0950268815002630</a></span>
+                                </li>
+                            </ul>
+                            <hr>
+                        </li>
+                        
+                        <!--第五項-->
+                        <li class="pub-item">
+                            <ul>
+                                <!-- 標題 -->
+                                <li>
+                                    <span class="pub-title">A dynamic model for the outbreaks of hand, foot, and mouth disease in Taiwan</span>
+                                </li>
+
+
+                                <!-- 刊名 + 出版年 + 卷期 -->
+                                <li>
+                                    <span><span class="pub-title2">Article</span>
+                                    <span class="color-gray">EPIDEMIOLOGY AND INFECTION & 123 , vol. 144 , no. 7 , page 1500-1511 , 2016</span>
+                                    </span>
+                                </li>
+
+
+                                <!-- 已轉入 Academic Hub 作者 -->
+                                <li>
+                                    <span class="pub-author">
+                                        <span class="color-gray"><span class="glyphicon glyphicon-user pub-title3">&ensp;作者：</span>Lai, C. -C. ;   Jiang, D. -S. ;   Wu, H. -M. ;</span>
+                                    </span>
+                                </li>
+
+
+                                <!-- DOI -->
+                                <li>
+                                    <span class="color-gray"><span class="glyphicon glyphicon-info-sign pub-title3" aria-hidden="true">&ensp;DOI：</span><a class="color-default" href="" target="_blank">10.1017/S0950268815002630</a></span>
+                                </li>
+                            </ul>
+                            <hr>
+                        </li>
+
+                    </ol>
+                    
+                    <!--頁數開始-->  
+                    <div class="page-nation text-center">
+                        <ul class="pagination pagination-large">
+                            <li class="disabled"><span>«</span></li>
+                            <li class="active"><span>1</span></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">8</a></li>
+                            <li><a href="#">9</a></li>
+                            <li class="disabled"><span>...</span></li>
+                            <li><a rel="next" href="#">Next</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!--內文區塊結束-->
+            </div>
+            <!--右邊欄區塊結束-->
+
+
+
+        </div>
+        <script>
+            $(document).ready(function() {
+                $('[id^=detail-]').hide();
+                $('.toggle').click(function() {
+                    $input = $(this);
+                    $target = $('#' + $input.attr('data-toggle'));
+                    $target.slideToggle();
+                });
+            });
+
+        </script>
+
+
+
+
+
+    </div>
+    <!--end of container main-->
+
+    <div class="container footer">
+        <div class="row center-block text-center">
+            <div class="col-sm-12">
+                <p>總院住址：500彰化市南校街135號　/　總院電話：Tel/04-7238595 Fax/04-7232942</p>
+                <p>2018 © 本網站內容為彰化基督教醫療財團法人彰化基督教醫院所有 未經授權 禁止轉載</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-lg-6 numbers-last color-white center-block text-center float-none">
+                <div class="col-xs-4">
+                    <div>目前在線人數</div>
+                    <div>54</div>
+                </div>
+                <div class="col-xs-4">
+                    <div>今日瀏覽人次</div>
+                    <div>3,360</div>
+                </div>
+                <div class="col-xs-4">
+                    <div>總瀏覽人次</div>
+                    <div>23,939,889</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of container footer-->
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    
+
+</body>
+
+</html>

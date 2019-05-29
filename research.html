@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="img/ic_fav.png"/>
+    <link rel="bookmark" href="img/ic_fav.png"/>  -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>彰化基督教醫院Reseach Matrix</title>
+    <meta name="keywords" content="彰基,彰基RM,彰基學術成果平台,彰化基督教醫院,Reseach Matrix" />
+    <meta name="description" content="彰化基督教醫院的學術成果平台——我們的研究成果與最新消息" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <!--js順序有差要注意-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/miller_code.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">	
+                    <span class="sr-only">選單切換</span>	
+                    <span class="icon-bar"></span>	
+                    <span class="icon-bar"></span>	
+                    <span class="icon-bar"></span>	
+                </button>
+                <a class="navbar-brand" href="index.html"><img alt="彰基logo" src="img/logo.png"></a>
+            </div>
+
+            <!-- 手機隱藏選單區 -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <!-- 左選單 -->
+                <ul class="nav navbar-nav main-menu pull-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-home">&ensp;</span>首頁</a></li>
+                    <li><a href="news.html"><span class="glyphicon glyphicon-bullhorn">&ensp;</span>最新消息</a></li>
+                    <li class="active"><a href="research.html"><span class="glyphicon glyphicon-star">&ensp;</span>研究焦點</a></li>
+                    
+                    <li class="dropdown">	
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-eye-open">&ensp;</span>瀏覽 
+                            <b class="caret"></b></a>	
+                        <ul class="dropdown-menu">
+                            <li><a href="department.html">部級單位</a></li>
+                            <li><a href="division.html">科級單位</a></li>
+                            <li><a href="researcher.html">研究人員</a></li>
+                            <li><a href="article.html">學術著作</a></li>
+                            <li><a href="project.html">研究計畫</a></li>
+                        </ul>
+                    </li>
+                    
+                    
+                    <li><a href="#"><span class="glyphicon glyphicon-link">&ensp;</span>相關連結</a></li>
+                </ul>
+
+
+
+                <!-- 右選單 -->
+                <ul class="nav navbar-nav navbar-right sub-menu">
+                    <li><a href="#">登入</a></li>
+                    <li><a href="#">操作手冊</a></li>
+                    <li><a href="#">常見問題</a></li>
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">聯絡我們</a></li>
+                    <li><a href="#">彰基圖書館</a></li>
+                </ul>
+                
+            </div>
+            <!-- 手機隱藏選單區結束 -->
+        </div>
+    </nav>
+    <!--nav結束-->
+    
+    <div class="container container-breadcrumb">
+        <ol class="breadcrumb">
+            <li><a href="index.html">首頁</a></li>
+            <li class="active">研究人員</li>
+        </ol>
+    </div>
+
+
+
+    <div class="container container-main">
+        <div class="row">
+            <div class="col-md-3 leftside-menu">
+                <ul class="ul_listnone">
+                    <h4>標題檢索</h4>
+                </ul>
+                <ul class="ul_listnone">
+                    <li>
+                        <div class="search">
+                            <div class="input-group">
+                                <input type="text" class="search-bar form-control" placeholder="Search" />
+                                <span class="input-group-btn">
+                                   <button class="btn btn-search" type="button">    
+                                       <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                                </span>
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+                <ul class="ul_listnone">
+                    <li class="padding-default" role="科別">
+                        <div class="container-full">
+                            <div class="chose-date">選擇日期</div><select class="form-control width-thirty" name="西元年">
+                            <option value="1">2018</option>
+                            <option value="2">2017</option>
+                            <option value="3">2016</option>
+                            <option value="4">2015</option>
+                            </select><div class="width-ten center">年</div><select class="form-control width-thirty" name="月">
+                            <option value="1">請選擇</option>
+                            <option value="2">1</option>
+                            <option value="3">2</option>
+                            <option value="4">3</option>
+                            <option value="2">4</option>
+                            <option value="3">5</option>
+                            <option value="4">6</option>
+                            <option value="2">7</option>
+                            <option value="3">8</option>
+                            <option value="4">9</option>
+                            <option value="2">10</option>
+                            <option value="3">11</option>
+                            <option value="4">12</option>
+                            </select><div class="width-ten center">月</div>
+                            <!--這塊html不要分段，分了排版會跑掉-->
+                        </div>
+                    </li>
+                    
+                    <li class="padding-default" role="說明">
+                        <button class="container-full btn btn-search" type="button"><span class="glyphicon glyphicon-search">&ensp;查詢</span>
+                        </button>
+                    </li>
+                    
+                </ul>
+                <!--研究焦點檢索區 結束-->
+
+
+
+            </div>
+            <!--左邊欄結束-->
+
+            <div class="col-md-9 rightside-menu">
+                <div class="col-md-12 title-rightside">
+                    <h4><span class="glyphicon glyphicon-star">&ensp;</span>研究焦點</h4>
+                </div>
+                <div class="col-md-12 content-rightside news-list">
+                    
+                    
+
+                    <ol class="ul_listnone">
+                       
+                        <li>
+                            <div class="calendar">
+                                <div>
+                                    April
+                                </div>
+                                <div>
+                                    24
+                                </div>
+                                <div>
+                                    2018
+                                </div>
+                            </div>
+                            <!--日期-->
+                            
+                            <div class="">
+                                <a class="color-dark"><h5>本機構於12月22日開始受理107年度組織績效自我評估評鑑委員會報名，本活動共分三梯次，請機構同仁及早報名以免向隅</h5></a>
+                                <p class="color-gray"><span class="glyphicon glyphicon-calendar pub-title3 color-orange"></span><span>&ensp;發布日期：</span><span class="color-orange">2018-01-24</span>&ensp;|&ensp;<span class="glyphicon glyphicon-user pub-title3 color-orange"></span><span>&ensp;單位：</span><span>秘書組</span>&ensp;|&ensp;<span class="glyphicon glyphicon-tags pub-title3 color-orange"></span><span>&ensp;類別：</span><span>行政簡訊</span>&ensp;|&ensp;<span class="glyphicon glyphicon-eye-open pub-title3 color-orange"></span><span>&ensp;點閱數：</span><span>81次</span></p>
+                                
+                                <div>
+                                   <a href="" class="glyphicon glyphicon-arrow-right">閱讀</a>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                        
+                        <li>
+                            <div class="calendar">
+                                <div>
+                                    April
+                                </div>
+                                <div>
+                                    24
+                                </div>
+                                <div>
+                                    2018
+                                </div>
+                            </div>
+                            <!--日期-->
+                            
+                            <div class="">
+                                <a class="color-dark"><h5>本機構於12月22日開始受理107年度組織績效自我評估評鑑委員會報名，本活動共分三梯次，請機構同仁及早報名以免向隅</h5></a>
+                                <p class="color-gray"><span class="glyphicon glyphicon-calendar pub-title3 color-orange"></span><span>&ensp;發布日期：</span><span class="color-orange">2018-01-24</span>&ensp;|&ensp;<span class="glyphicon glyphicon-user pub-title3 color-orange"></span><span>&ensp;單位：</span><span>秘書組</span>&ensp;|&ensp;<span class="glyphicon glyphicon-tags pub-title3 color-orange"></span><span>&ensp;類別：</span><span>行政簡訊</span>&ensp;|&ensp;<span class="glyphicon glyphicon-eye-open pub-title3 color-orange"></span><span>&ensp;點閱數：</span><span>81次</span></p>
+                                
+                                <div>
+                                   <a href="" class="glyphicon glyphicon-arrow-right">閱讀</a>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                        
+                        <li>
+                            <div class="calendar">
+                                <div>
+                                    April
+                                </div>
+                                <div>
+                                    24
+                                </div>
+                                <div>
+                                    2018
+                                </div>
+                            </div>
+                            <!--日期-->
+                            
+                            <div class="">
+                                <a class="color-dark"><h5>本機構於12月22日開始受理107年度組織績效自我評估評鑑委員會報名，本活動共分三梯次，請機構同仁及早報名以免向隅</h5></a>
+                                <p class="color-gray"><span class="glyphicon glyphicon-calendar pub-title3 color-orange"></span><span>&ensp;發布日期：</span><span class="color-orange">2018-01-24</span>&ensp;|&ensp;<span class="glyphicon glyphicon-user pub-title3 color-orange"></span><span>&ensp;單位：</span><span>秘書組</span>&ensp;|&ensp;<span class="glyphicon glyphicon-tags pub-title3 color-orange"></span><span>&ensp;類別：</span><span>行政簡訊</span>&ensp;|&ensp;<span class="glyphicon glyphicon-eye-open pub-title3 color-orange"></span><span>&ensp;點閱數：</span><span>81次</span></p>
+                                
+                                <div>
+                                   <a href="" class="glyphicon glyphicon-arrow-right">閱讀</a>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                        
+                        
+                        <li>
+                            <div class="calendar">
+                                <div>
+                                    April
+                                </div>
+                                <div>
+                                    24
+                                </div>
+                                <div>
+                                    2018
+                                </div>
+                            </div>
+                            <!--日期-->
+                            
+                            <div class="">
+                                <a class="color-dark"><h5>本機構於12月22日開始受理107年度組織績效自我評估評鑑委員會報名，本活動共分三梯次，請機構同仁及早報名以免向隅</h5></a>
+                                <p class="color-gray"><span class="glyphicon glyphicon-calendar pub-title3 color-orange"></span><span>&ensp;發布日期：</span><span class="color-orange">2018-01-24</span>&ensp;|&ensp;<span class="glyphicon glyphicon-user pub-title3 color-orange"></span><span>&ensp;單位：</span><span>秘書組</span>&ensp;|&ensp;<span class="glyphicon glyphicon-tags pub-title3 color-orange"></span><span>&ensp;類別：</span><span>行政簡訊</span>&ensp;|&ensp;<span class="glyphicon glyphicon-eye-open pub-title3 color-orange"></span><span>&ensp;點閱數：</span><span>81次</span></p>
+                                
+                                <div>
+                                   <a href="" class="glyphicon glyphicon-arrow-right">閱讀</a>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                        
+                        <li>
+                            <div class="calendar">
+                                <div>
+                                    April
+                                </div>
+                                <div>
+                                    24
+                                </div>
+                                <div>
+                                    2018
+                                </div>
+                            </div>
+                            <!--日期-->
+                            
+                            <div class="">
+                                <a class="color-dark"><h5>本機構於12月22日開始受理107年度組織績效自我評估評鑑委員會報名，本活動共分三梯次，請機構同仁及早報名以免向隅</h5></a>
+                                <p class="color-gray"><span class="glyphicon glyphicon-calendar pub-title3 color-orange"></span><span>&ensp;發布日期：</span><span class="color-orange">2018-01-24</span>&ensp;|&ensp;<span class="glyphicon glyphicon-user pub-title3 color-orange"></span><span>&ensp;單位：</span><span>秘書組</span>&ensp;|&ensp;<span class="glyphicon glyphicon-tags pub-title3 color-orange"></span><span>&ensp;類別：</span><span>行政簡訊</span>&ensp;|&ensp;<span class="glyphicon glyphicon-eye-open pub-title3 color-orange"></span><span>&ensp;點閱數：</span><span>81次</span></p>
+                                
+                                <div>
+                                   <a href="" class="glyphicon glyphicon-arrow-right">閱讀</a>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                        
+                        <li>
+                            <div class="calendar">
+                                <div>
+                                    April
+                                </div>
+                                <div>
+                                    24
+                                </div>
+                                <div>
+                                    2018
+                                </div>
+                            </div>
+                            <!--日期-->
+                            
+                            <div class="">
+                                <a class="color-dark"><h5>本機構於12月22日開始受理107年度組織績效自我評估評鑑委員會報名，本活動共分三梯次，請機構同仁及早報名以免向隅</h5></a>
+                                <p class="color-gray"><span class="glyphicon glyphicon-calendar pub-title3 color-orange"></span><span>&ensp;發布日期：</span><span class="color-orange">2018-01-24</span>&ensp;|&ensp;<span class="glyphicon glyphicon-user pub-title3 color-orange"></span><span>&ensp;單位：</span><span>秘書組</span>&ensp;|&ensp;<span class="glyphicon glyphicon-tags pub-title3 color-orange"></span><span>&ensp;類別：</span><span>行政簡訊</span>&ensp;|&ensp;<span class="glyphicon glyphicon-eye-open pub-title3 color-orange"></span><span>&ensp;點閱數：</span><span>81次</span></p>
+                                
+                                <div>
+                                   <a href="" class="glyphicon glyphicon-arrow-right">閱讀</a>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                        
+                        <li>
+                            <div class="calendar">
+                                <div>
+                                    April
+                                </div>
+                                <div>
+                                    24
+                                </div>
+                                <div>
+                                    2018
+                                </div>
+                            </div>
+                            <!--日期-->
+                            
+                            <div class="">
+                                <a class="color-dark"><h5>本機構於12月22日開始受理107年度組織績效自我評估評鑑委員會報名，本活動共分三梯次，請機構同仁及早報名以免向隅</h5></a>
+                                <p class="color-gray"><span class="glyphicon glyphicon-calendar pub-title3 color-orange"></span><span>&ensp;發布日期：</span><span class="color-orange">2018-01-24</span>&ensp;|&ensp;<span class="glyphicon glyphicon-user pub-title3 color-orange"></span><span>&ensp;單位：</span><span>秘書組</span>&ensp;|&ensp;<span class="glyphicon glyphicon-tags pub-title3 color-orange"></span><span>&ensp;類別：</span><span>行政簡訊</span>&ensp;|&ensp;<span class="glyphicon glyphicon-eye-open pub-title3 color-orange"></span><span>&ensp;點閱數：</span><span>81次</span></p>
+                                
+                                <div>
+                                   <a href="" class="glyphicon glyphicon-arrow-right">閱讀</a>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                        
+                        <li>
+                            <div class="calendar">
+                                <div>
+                                    April
+                                </div>
+                                <div>
+                                    24
+                                </div>
+                                <div>
+                                    2018
+                                </div>
+                            </div>
+                            <!--日期-->
+                            
+                            <div class="">
+                                <a class="color-dark"><h5>本機構於12月22日開始受理107年度組織績效自我評估評鑑委員會報名，本活動共分三梯次，請機構同仁及早報名以免向隅</h5></a>
+                                <p class="color-gray"><span class="glyphicon glyphicon-calendar pub-title3 color-orange"></span><span>&ensp;發布日期：</span><span class="color-orange">2018-01-24</span>&ensp;|&ensp;<span class="glyphicon glyphicon-user pub-title3 color-orange"></span><span>&ensp;單位：</span><span>秘書組</span>&ensp;|&ensp;<span class="glyphicon glyphicon-tags pub-title3 color-orange"></span><span>&ensp;類別：</span><span>行政簡訊</span>&ensp;|&ensp;<span class="glyphicon glyphicon-eye-open pub-title3 color-orange"></span><span>&ensp;點閱數：</span><span>81次</span></p>
+                                
+                                <div>
+                                   <a href="" class="glyphicon glyphicon-arrow-right">閱讀</a>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                        
+                        <li>
+                            <div class="calendar">
+                                <div>
+                                    April
+                                </div>
+                                <div>
+                                    24
+                                </div>
+                                <div>
+                                    2018
+                                </div>
+                            </div>
+                            <!--日期-->
+                            
+                            <div class="">
+                                <a class="color-dark"><h5>本機構於12月22日開始受理107年度組織績效自我評估評鑑委員會報名，本活動共分三梯次，請機構同仁及早報名以免向隅</h5></a>
+                                <p class="color-gray"><span class="glyphicon glyphicon-calendar pub-title3 color-orange"></span><span>&ensp;發布日期：</span><span class="color-orange">2018-01-24</span>&ensp;|&ensp;<span class="glyphicon glyphicon-user pub-title3 color-orange"></span><span>&ensp;單位：</span><span>秘書組</span>&ensp;|&ensp;<span class="glyphicon glyphicon-tags pub-title3 color-orange"></span><span>&ensp;類別：</span><span>行政簡訊</span>&ensp;|&ensp;<span class="glyphicon glyphicon-eye-open pub-title3 color-orange"></span><span>&ensp;點閱數：</span><span>81次</span></p>
+                                
+                                <div>
+                                   <a href="" class="glyphicon glyphicon-arrow-right">閱讀</a>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                        
+                        <li>
+                            <div class="calendar">
+                                <div>
+                                    April
+                                </div>
+                                <div>
+                                    24
+                                </div>
+                                <div>
+                                    2018
+                                </div>
+                            </div>
+                            <!--日期-->
+                            
+                            <div class="">
+                                <a class="color-dark"><h5>本機構於12月22日開始受理107年度組織績效自我評估評鑑委員會報名，本活動共分三梯次，請機構同仁及早報名以免向隅</h5></a>
+                                <p class="color-gray"><span class="glyphicon glyphicon-calendar pub-title3 color-orange"></span><span>&ensp;發布日期：</span><span class="color-orange">2018-01-24</span>&ensp;|&ensp;<span class="glyphicon glyphicon-user pub-title3 color-orange"></span><span>&ensp;單位：</span><span>秘書組</span>&ensp;|&ensp;<span class="glyphicon glyphicon-tags pub-title3 color-orange"></span><span>&ensp;類別：</span><span>行政簡訊</span>&ensp;|&ensp;<span class="glyphicon glyphicon-eye-open pub-title3 color-orange"></span><span>&ensp;點閱數：</span><span>81次</span></p>
+                                
+                                <div>
+                                   <a href="" class="glyphicon glyphicon-arrow-right">閱讀</a>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                        
+                        
+                        
+                     
+                        
+                    </ol>
+
+
+                    <div class="page-nation text-center">
+                        <ul class="pagination pagination-large">
+                            <li class="disabled"><span>«</span></li>
+                            <li class="active"><span>1</span></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">8</a></li>
+                            <li><a href="#">9</a></li>
+                            <li class="disabled"><span>...</span></li>
+                            <li><a rel="next" href="#">Next</a></li>
+                        </ul>
+                    </div>
+                    <!--頁數 結束-->
+
+                </div>
+            </div>
+            <!--右邊欄結束-->
+
+
+
+        </div>
+        <script>
+            $(document).ready(function() {
+                $('[id^=detail-]').hide();
+                $('.toggle').click(function() {
+                    $input = $(this);
+                    $target = $('#' + $input.attr('data-toggle'));
+                    $target.slideToggle();
+                });
+            });
+
+        </script>
+
+
+
+
+
+    </div>
+    <!--end of container main-->
+
+    <div class="container footer">
+        <div class="row center-block text-center">
+            <div class="col-sm-12">
+                <p>總院住址：500彰化市南校街135號　/　總院電話：Tel/04-7238595 Fax/04-7232942</p>
+                <p>2018 © 本網站內容為彰化基督教醫療財團法人彰化基督教醫院所有 未經授權 禁止轉載</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-lg-6 numbers-last color-white center-block text-center float-none">
+                <div class="col-xs-4">
+                    <div>目前在線人數</div>
+                    <div>54</div>
+                </div>
+                <div class="col-xs-4">
+                    <div>今日瀏覽人次</div>
+                    <div>3,360</div>
+                </div>
+                <div class="col-xs-4">
+                    <div>總瀏覽人次</div>
+                    <div>23,939,889</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of container footer-->
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+</body>
+
+</html>
